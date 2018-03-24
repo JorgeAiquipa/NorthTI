@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Municipalidad San Borja</string>
+    <string name="hint_usuario">Usuario</string>
+    <string name="hint_pwd">Contraseña</string>
+    <string name="todo">TODO</string>
+    <string name="titulo_login">AUTOSERVICIO JUVENTUD Y DEPORTE</string>
+    <string name="boton_ingresar">Ingresar</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="tituloReservas">Reservas</string>
+    <string name="menu_actividad_deportiva">ACTIVIDAD DEPORTIVA</string>
+    <string name="menu_instalacion_deportiva">INSTALACIÓN DEPORTIVA</string>
+    <string name="submenu_deporte">El sistema propone las actividades favoritas</string>
+    <string name="submenu_instalacion">Reservar por horas las canchas de fútbol / voley</string>
+    <string name="titulo_reservar_deporte">Reservar Actividad</string>
+    <string name="desc_vecino">Beneficios en el pago de la actividad deportiva</string>
+    <string name="soy_vecino">Soy vecino</string>
+    <string name="no_soy_vecino">No soy vecino</string>
+    <string name="grabar">Grabar</string>
+
+    <string-array name="deportes">
+        <item>Seleccione el deporte</item>
+        <item>Fútbol</item>
+        <item>Voley</item>
+        <item>Basket</item>
+        <item>Karate</item>
+    </string-array>
+
+    <string-array name="sedes">
+        <item>Seleccione la sede</item>
+        <item>Limatambo</item>
+        <item>Rosa Toro</item>
+    </string-array>
+
+    <string-array name="hijos">
+        <item>Seleccione a su hijo</item>
+        <item>Sebastian Aiquipa</item>
+        <item>Lucía Aiquipa</item>
+        <item>Adriana Aiquipa</item>
+    </string-array>
+
+</resources>

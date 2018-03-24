@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:entries="@array/deportes"
+        android:layout_marginTop="10dp"
+        android:id="@+id/spDeporte">
+
+    </Spinner>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:entries="@array/sedes"
+        android:layout_marginTop="10dp"
+        android:id="@+id/spSede">
+
+    </Spinner>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlv1"
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgDeporte"
+            android:src="@drawable/futbol"
+            android:contentDescription="@string/todo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblDeporte"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/imgDeporte"
+            android:text="Fútbol - Limatambo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblDeporte"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/imgDeporte"
+            android:text="Lun-Vie 10-12 pm - 10 a 12 años"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/select_star"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/todo"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlv2"
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgDeporte2"
+            android:src="@drawable/futbol"
+            android:contentDescription="@string/todo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblDeporte2"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/imgDeporte2"
+            android:text="Fútbol - Limatambo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblDeporte2"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/imgDeporte2"
+            android:text="Lun-Vie 10-12 pm - 7 a 9 años"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/unselect_star"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/todo"/>
+
+    </RelativeLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:entries="@array/hijos"
+        android:layout_marginTop="10dp"
+        android:id="@+id/spHijos">
+
+    </Spinner>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGrabarDeporte"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/white"
+        android:text="@string/grabar"
+        android:background="@color/colorBoton"/>
+
+</LinearLayout>

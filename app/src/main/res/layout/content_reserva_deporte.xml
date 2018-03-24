@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear1"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rlvVecino"
+            android:padding="10dp"
+            card_view:cardBackgroundColor="@color/colorVecino"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblVecino"
+                android:text="@string/soy_vecino"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/desc_vecino"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/black"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/rlvNoVecino"
+            android:padding="20dp"
+            card_view:cardBackgroundColor="@color/colorNoSoyVecino"
+            card_view:cardUseCompatPadding="true"
+            android:layout_marginStart="5dp"
+            card_view:cardCornerRadius="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblNoVecino"
+                android:text="@string/no_soy_vecino"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La tarifa normal sin descuento"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/black"/>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlv1"
+        android:layout_below="@id/linear1"
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgDeporte"
+            android:src="@drawable/futbol"
+            android:contentDescription="@string/todo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblDeporte"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/imgDeporte"
+            android:text="Fútbol - Limatambo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblDeporte"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/imgDeporte"
+            android:text="Lun-Vie 10-12 pm"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/visa"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/todo"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlv2"
+        android:layout_below="@id/rlv1"
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgInstalacion"
+            android:src="@drawable/voley"
+            android:contentDescription="@string/todo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblDeporte2"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/imgInstalacion"
+            android:text="Voley - Rosa Toro"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblDeporte2"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/imgInstalacion"
+            android:text="Sáb 08-10 am"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/visa"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/todo"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOtrasReservas"
+        android:layout_below="@+id/rlv2"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorBoton"
+        android:text="Otras Reservas"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>
